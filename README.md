@@ -1,2 +1,2 @@
 # STDDNet
-The official codes for STDDNet.
+Official PyTorch implementation of "STDDNet".

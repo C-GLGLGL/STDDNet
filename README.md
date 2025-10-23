@@ -48,6 +48,8 @@ python /your_project_path/scripts/my_train.py
 //Test:
 python /your_project_path/scripts/my_test.py
 ```
+### Logs and Weights
+We provide the relevant logs and ckpts (trained on SUN-SEG dataset) based on two different backbones: [Res2Net-50](https://github.com/C-GLGLGL/STDDNet/releases/download/logs_and_ckpts/pvtv2b2-log.zip) and [PVTv2-B2](https://github.com/C-GLGLGL/STDDNet/releases/download/logs_and_ckpts/pvtv2b2-log.zip) 
 # Acknowledgement
 Our work builds upon the excellent foundational research of [PNS+](https://github.com/GewelsJI/VPS) and [Vim](https://github.com/hustvl/Vim). We thank the authors for their awesome works and publicly available codes.
 

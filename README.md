@@ -42,7 +42,7 @@ a. **replace the compiled file *mamba_simple.py* (at /your_home_path/anaconda3/e
 b. **replace the compiled file *selective_scan_interface.py* (at /your_home_path/anaconda3/envs/stddnet/lib/python3.10/site-packages/mamba_ssm/ops/)**
 
 ## Training and Testing
-```python
+```
 //Train:
 python /your_project_path/scripts/my_train.py
 //Test:

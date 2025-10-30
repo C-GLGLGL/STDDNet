@@ -56,5 +56,11 @@ Our work builds upon the excellent foundational research of [PNS+](https://githu
 # Citation
 if you find our work useful, please cite:
 ```
-To be updated..
+@inproceedings{chen2025stddnet,
+  title={STDDNet: Harnessing Mamba for Video Polyp Segmentation via Spatial-aligned Temporal Modeling and Discriminative Dynamic Representation Learning},
+  author={Chen, Guilian and Wu, Huisi and Qin, Jing},
+  booktitle={Proceedings of the IEEE/CVF International Conference on Computer Vision},
+  pages={21364--21373},
+  year={2025}
+}
 ```

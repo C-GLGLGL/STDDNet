@@ -4,13 +4,13 @@ import numpy as np
 
 class DiceCoeff(Function):
     """Dice coeff for individual examples"""
-    def forward(self, input, target):
+    def forward(self, input, target, threshold=0.5, eps=1e-8):
         self.save_for_backward(input, target)
+        
+        input_binary = (input > threshold).float()
 
-        eps = 0.0001
-
-        self.inter = torch.dot(input.view(-1), target.view(-1))
-        self.union = torch.sum(input) + torch.sum(target) + eps
+        self.inter = torch.dot(input_binary.view(-1), target.view(-1))
+        self.union = torch.sum(input_binary) + torch.sum(target) + eps
 
         t = (2 * self.inter.float() + eps) / self.union.float()
         return t

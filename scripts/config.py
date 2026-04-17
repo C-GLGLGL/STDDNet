@@ -8,14 +8,14 @@ parser.add_argument('--gpu_id', type=str, default='0', help='train use gpu')
 parser.add_argument('--base_lr', type=float, default=2e-4)
 parser.add_argument('--betas', type=tuple, default=(0.9, 0.999))
 parser.add_argument('--weight_decay', type=float, default=0.0001)
-parser.add_argument('--T_max', type=int, default=20, help='epoch nums before reaching min_lr')
+parser.add_argument('--T_max', type=int, default=20, help='epoch nums before reaching min_lr, 20 for SUN-SEG and 50/60 for CVC')
 parser.add_argument('--finetune_lr', type=float, default=5e-5)
 parser.add_argument('--decay_rate', type=float, default=0.8, help='decay rate of learning rate')
 parser.add_argument('--decay_epoch', type=int, default=50, help='every n epochs decay learning rate')
 parser.add_argument('--clip', type=float, default=0.5, help='gradient clipping margin')
 
 # train schedule
-parser.add_argument('--epoches', type=int, default=30)
+parser.add_argument('--epoches', type=int, default=30, help='30 for SUN-SEG, 100 for CVC-Clinic DB')
 
 # data
 parser.add_argument('--data_statistics', type=str,
